@@ -99,7 +99,10 @@ class _FollowCounterState extends State<FollowCounter> {
           style: const TextStyle(fontSize: 20),
         ),
         const SizedBox(height: 10),
-
+        ElevatedButton(
+          onPressed: _increment,
+          child: const Text('Follow'),
+        ),
       ],
     );
   }
