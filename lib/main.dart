@@ -74,3 +74,33 @@ class ProfileCard extends StatelessWidget {
   }
 }
 
+class FollowCounter extends StatefulWidget {
+  const FollowCounter({super.key});
+
+  @override
+  State<FollowCounter> createState() => _FollowCounterState();
+}
+
+class _FollowCounterState extends State<FollowCounter> {
+  int _followerCount = 0;
+  
+  void _increment() {
+    setState(() {
+      this._followerCount++;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          'Followers: $_followerCount',
+          style: const TextStyle(fontSize: 20),
+        ),
+        const SizedBox(height: 10),
+
+      ],
+    );
+  }
+}
