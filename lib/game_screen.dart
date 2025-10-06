@@ -96,13 +96,13 @@ class GameScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
           ),
           child: Center(
-            child: Text(
-              card !=null ? '${card.rank} of ${card.suit}': 'No Card',
+            child: 
+             Text (card != null ? '${card.rank} of ${card.suit}' : 'No Card',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
+              ),
             ),
           ),
-        ),
       ],
     );
   }

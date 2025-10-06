@@ -4,5 +4,5 @@ class CardModel {
 
   CardModel({required this.suit, required this.rank});
 
-  String get asset => 'assets/cards/${rank}_of_$suit.svg';
+  String get asset => 'assets/cards/${rank}_of_${suit}.svg';
 }
