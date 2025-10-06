@@ -69,11 +69,11 @@ class GameScreen extends StatelessWidget {
                         onPressed: game.playRound,
                         child: Text('Play Round'),
                       ),
-                      // SizedBox(height: 10),
-                      // ElevatedButton(
-                      //   onPressed: () => Navigator.pop(context),
-                      //   child: Text('Quit Game'),
-                      // ),
+                      SizedBox(height: 10),
+                      ElevatedButton(
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Quit Game'),
+                      ),
                     ],
                   ),
           ),
